@@ -1,0 +1,9 @@
+
+  <h1>Add a new job</h1>
+  <%= simple_form_for @job, url: jobs_path do |f| %>
+    <%= f.input :title %>
+    <%= f.input :description %>
+    <br />
+    <%= f.submit "Create", class: 'btn btn-primary' %>
+    <br />
+  <% end %>
